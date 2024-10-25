@@ -1,26 +1,31 @@
-import { viteBundler } from '@vuepress/bundler-vite'
-import { defineUserConfig } from 'vuepress'
-import { plumeTheme } from 'vuepress-theme-plume'
+import { viteBundler } from "@vuepress/bundler-vite";
+import { defineUserConfig } from "vuepress";
+import { plumeTheme } from "vuepress-theme-plume";
 
 export default defineUserConfig({
-  base: '/',
-  lang: 'zh-CN',
-  title: 'Tubao Blog',
-  description: 'This tubao-blog is built with Vuepress-theme-plume!',
+  base: "/",
+  lang: "zh-CN",
+  title: "Tubao Blog",
+  description: "This tubao-blog is built with Vuepress-theme-plume!",
 
   bundler: viteBundler(),
 
   theme: plumeTheme({
+    blog: {},
     // 添加您的部署域名
     // hostname: 'https://your_site_url',
-
+    autoFrontmatter: {
+      permalink: true,
+      createTime: true,
+      title: true,
+    },
     plugins: {
       /**
        * Shiki 代码高亮
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       // shiki: {
-           // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
+      // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
       //   languages: ['shell', 'bash', 'typescript', 'javascript'],
       // },
 
@@ -30,11 +35,11 @@ export default defineUserConfig({
        */
       markdownEnhance: {
         demo: true,
-      //   include: true,
-      //   chart: true,
-      //   echarts: true,
-      //   mermaid: true,
-      //   flowchart: true,
+        //   include: true,
+        //   chart: true,
+        //   echarts: true,
+        //   mermaid: true,
+        //   flowchart: true,
       },
 
       /**
@@ -75,4 +80,4 @@ export default defineUserConfig({
       // },
     },
   }),
-})
+});
