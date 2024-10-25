@@ -14,7 +14,7 @@ config:
     hero:
       name: Bao2
       tagline: 我自为我之 Backend Developer
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      text: 欢迎来到我的博客，这里记录了我的一些学习心得和项目经验。
       actions:
         -
           theme: alt
@@ -23,5 +23,5 @@ config:
         -
           theme: brand
           text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          link: https://github.com/szhien
 ---

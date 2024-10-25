@@ -27,9 +27,7 @@ export default defineThemeConfig({
   navbar,
   notes,
   social: [
-    { icon: "github", link: "/" },
-    { icon: "twitter", link: "/" },
-    { icon: "qq", link: "/" },
+    { icon: "github", link: "https://github.com/szhien" },
   ],
 
   autoFrontmatter: {
