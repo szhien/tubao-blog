@@ -6,8 +6,8 @@ import { notes } from "./notes";
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  //   logo: "https://theme-plume.vuejs.press/plume.png",
-  logo: "https://tse2-mm.cn.bing.net/th/id/OIP-C.9G5zpkH0ofiXdX21TjTpfgHaHa?pid=ImgDet&w=60&h=60&c=7&dpr=1.5&rs=1",
+    // logo: "https://img.keaitupian.cn/newupload/10/1728632305951487.png",
+    logo: "https://tse3-mm.cn.bing.net/th/id/OIP-C.fIuv1OoksFyYE3c_THBCAAAAAA?rs=1&pid=ImgDetMain",
   // your git repo url
   docsRepo: "",
   docsDir: "docs",
@@ -15,19 +15,21 @@ export default defineThemeConfig({
   appearance: "dark",
 
   profile: {
-    avatar:
+      avatar:
+        //   "https://img.keaitupian.cn/newupload/10/1728632305951487.png",
       "https://tse3-mm.cn.bing.net/th/id/OIP-C.fIuv1OoksFyYE3c_THBCAAAAAA?rs=1&pid=ImgDetMain",
-    name: "Tubao Blog",
+    name: "Szhien",
     description: "我自为我",
     circle: true,
-    location: "zhejiang, China",
-    organization: "杭州 tubao",
+    location: "zhejiang,China",
+    organization: "xxx科技有限公司",
   },
 
   navbar,
   notes,
   social: [
     { icon: "github", link: "https://github.com/szhien" },
+    { icon: "qq", link: "https://im.qq.com/" },
   ],
 
   autoFrontmatter: {

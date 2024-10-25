@@ -1,6 +1,6 @@
 ---
 pageLayout: home
-externalLinkIcon: false
+externalLinkIcon: true
 config:
   -
     # type: hero
@@ -12,7 +12,7 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Bao2
+      name: Szhien
       tagline: 我自为我之 Backend Developer
       text: 欢迎来到我的博客，这里记录了我的一些学习心得和项目经验。
       actions:
